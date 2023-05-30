@@ -5,7 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        CPUInfo cpuInfo = new CPUInfo();
+        cpuInfo.getInfo();
 
     }
+
 }
