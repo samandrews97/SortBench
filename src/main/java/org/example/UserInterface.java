@@ -46,6 +46,7 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the single threaded benchmark");
+                                BubbleSort.bubbleSortSingle(TxtToArray.populateArray());
                                 break;
                             case 2:
                                 System.out.println("You have selected the multithreaded benchmark");
@@ -283,4 +284,5 @@ public class UserInterface {
 
 
     }
+
 }
