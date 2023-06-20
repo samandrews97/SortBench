@@ -16,7 +16,7 @@ public class TxtFileToArray {
         // A BufferedReader to load the data from the file
         try {
 
-            BufferedReader BufferedReader = new BufferedReader(new FileReader("/Users/sam/Desktop/SortBench2/sortbench/mit10000.txt"));
+            BufferedReader BufferedReader = new BufferedReader(new FileReader("/Users/sam/Desktop/SortBench/sortbench/mit10000.txt"));
 
             String line = BufferedReader.readLine();
 

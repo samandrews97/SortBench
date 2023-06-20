@@ -51,9 +51,12 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Bubble Sort info here");
+                                subMenu();
                                 break;
+                            case 3:
+                                System.out.println("");
                             default:
-                                System.out.println("Invalid Option: Please select an option between 1 & 2");
+                                System.out.println("Invalid Option: Please select an option between 1 & 3");
                                 subRepeat = true;
                                 userSelectionSub = userInputSub.nextInt();
                                 break;
@@ -270,6 +273,7 @@ public class UserInterface {
         System.out.println("Please select one of the following options:");
         System.out.println("1) Run sorting algorithm");
         System.out.println("2) Information about this algorithm");
+        System.out.println("3) Main menu");
 
     }
 
