@@ -19,6 +19,7 @@ public class UserInterface {
         System.out.println("5) Quick Sort");
         System.out.println("6) Radix Sort");
         System.out.println("7) Selection Sort");
+        System.out.println("8) Exit");
 
         userSelectionMain = userInputMain.nextInt();
 
@@ -245,8 +246,12 @@ public class UserInterface {
                     userInputSub.close();   // close the scanner to prevent a memory leak
                     break;
                 
+                case 8:
+                    System.out.println("Exiting program");
+                    System.exit(0);
+                
                 default:
-                    System.out.println("Invalid option: Please select an option between 1 & 7");
+                    System.out.println("Invalid option: Please select an option between 1 & 8");
                     repeat = true;
                     userSelectionMain = userInputMain.nextInt();
                     break;
