@@ -2,6 +2,8 @@ package sortbench;
 
 import java.util.Scanner;
 
+import apple.laf.JRSUIUtils.Tree;
+
 public class UserInterface {
 
     // Main menu for selecting which sorting algorithm to run
@@ -47,11 +49,15 @@ public class UserInterface {
 
                             case 1:
                                 BubbleSort.bubbleSort(TxtFileToArray.populateArray());
-                                mainMenu();
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Bubble Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
@@ -83,17 +89,22 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("Heap Sort here");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Heap Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
                                 userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
-                                System.out.println("Invalid Option: Please select an option between 1 & 2");
+                                System.out.println("Invalid Option: Please select an option between 1 & 3");
                                 subRepeat = true;
                                 userSelectionSub = userInputSub.nextInt();
                                 break;
@@ -118,10 +129,15 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the Insertion Sort algorithm");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Insertion Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
@@ -153,10 +169,15 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the Merge Sort algorithm");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Merge Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
@@ -188,10 +209,15 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the Quick Sort algorithm");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Quick Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
@@ -223,10 +249,15 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the single threaded benchmark");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Radix Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
@@ -259,10 +290,15 @@ public class UserInterface {
 
                             case 1:
                                 System.out.println("You have selected the Selection Sort algorithm");
+                                subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 2:
                                 System.out.println("Selection Sort info here");
                                 subMenu();
+                                userSelectionSub = userInputSub.nextInt();
+                                subRepeat = true;
                                 break;
                             case 3:
                                 mainMenu();
