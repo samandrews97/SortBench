@@ -54,7 +54,9 @@ public class UserInterface {
                                 subMenu();
                                 break;
                             case 3:
-                                System.out.println("");
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
+                                break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 3");
                                 subRepeat = true;
@@ -84,6 +86,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Heap Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -114,6 +121,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Insertion Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -144,6 +156,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Merge Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -174,6 +191,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Quick Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -204,6 +226,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Radix Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -235,6 +262,11 @@ public class UserInterface {
                                 break;
                             case 2:
                                 System.out.println("Selection Sort info here");
+                                subMenu();
+                                break;
+                            case 3:
+                                mainMenu();
+                                userInputSub.close();   // close the scanner to prevent a memory leak
                                 break;
                             default:
                                 System.out.println("Invalid Option: Please select an option between 1 & 2");
