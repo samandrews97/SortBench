@@ -52,7 +52,7 @@ public class UserInterface {
                                         subRepeat = true;
                                         break;
                                     case 2:
-                                        System.out.println("Bubble Sort info here");
+                                        BubbleSort.bubbleInfo();
                                         subMenu();
                                         userSelectionSub = isNumber(userInputSub);
                                         subRepeat = true;
