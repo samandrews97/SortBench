@@ -52,7 +52,7 @@ public class UserInterface {
                                         subRepeat = true;
                                         break;
                                     case 2:
-                                        System.out.println("Bubble Sort info here");
+                                        BubbleSort.bubbleInfo();
                                         subMenu();
                                         userSelectionSub = isNumber(userInputSub);
                                         subRepeat = true;
@@ -86,13 +86,13 @@ public class UserInterface {
                             switch(userSelectionSub) {
 
                                 case 1:
-                                    System.out.println("Heap Sort here");
+                                    HeapSort.heapSort(TxtFileToArray.populateArray());
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Heap Sort info here");
+                                    HeapSort.heapInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
