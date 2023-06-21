@@ -87,5 +87,42 @@ public class HeapSort {
         }
 
     }
+
+    public static void heapInfo() {
+
+        System.out.println();
+        System.out.println("About:");
+        System.out.println("Heapsort is a comparison sorting algorithm that comprises of multiple parts." 
+        + " The first part consists of creating a heap from the provided data. This heap has the layout of a "
+        + "bianry tree, with each node in the tree mapping to an array indice. The second part the array is sorted "
+        + "by repeatedly removing the largest element, which is the root of the heap, and placing it at the end of the array "
+        + "and updating the heap. This repeats until the heap is empty and the result is a sorted array.");
+        System.out.println();
+        System.out.println("Performance:");
+        System.out.println("Worst-case: O(n log n) time complexity");
+        System.out.println("Average: 0(n log n) time complexity");
+        System.out.println("Best-case: O(n log n) time complexity");
+        System.out.println("Memory: The wrost-case space complexity is O(n) total and O(1) auxiliary");
+        System.out.println();
+        System.out.println("While faster than other algorithms such as Bubble sort, Heapsort competes mainly with Quicksort."
+                          + " while it has multiple benefits such as simple non-recursive code, low memory requirements and doesn't " 
+                          + "hit the worst case performance of quicksort - (n\u00b2). It has bad locality of reference, is not easy to alter " 
+                          + "to make use of parallelism and is usually up to 3 times slower than quicksort. As such quicksort is preferred in "
+                          + "programs where the time to implement and the extra perfromance are needed.");  
+        System.out.println();
+        System.out.println("Trivia:");
+        System.out.println("The Heapsort was invented by J. W. J. Williams in 1964. It was also the birth of the heap data structure.");
+        System.out.println();
+        System.out.println("Robert W. Floyd imporpved upon the original algorithm and his implementation allowed for in-place sorting");
+        System.out.println("There are many variations of the heapsort algorithm. Some of these are:");
+        System.out.println("Floyd's heap construction, Bottom-up heapsort, Ternary heapsort, Memory optimised heapsort, "
+                          + "Out-of-place heapsort, Smoothsort, Weak heapsort and Katajainen's ultimate heapsort");
+        System.out.println();
+        System.out.println("Heapsort is popular in embedded systems, real-time computing and the Linux kernel");
+        System.out.println();
+
+
+
+    }
     
 }

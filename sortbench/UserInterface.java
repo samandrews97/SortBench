@@ -92,7 +92,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Heap Sort info here");
+                                    HeapSort.heapInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;

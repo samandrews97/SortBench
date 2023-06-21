@@ -42,6 +42,7 @@ public class BubbleSort {
     public static void bubbleInfo() {
 
         System.out.println();
+        System.out.println("About:");
         System.out.println("The Bubble sort algorithm is a simple, comparison sorting algorithm that repeatedly goes through a"
                             + " list comparing adjacent items, swapping them if they are not in the correct order.");
         System.out.println();
@@ -49,6 +50,7 @@ public class BubbleSort {
         System.out.println("Worst-case: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(n\ub002) swaps.");
         System.out.println("Average: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(n\u00b2) swaps.");
         System.out.println("Best-case: O(n) time complexity. This is comprised of O(n) comparisons and O(1) swaps.");
+        System.out.println("Memory: The worst-case space complexity is O(n) total and O(1) auxiliary");
         System.out.println();
         System.out.println("In real world use with large unsorted lists, Bubble sort performs poorly. As such, it is rarely used.");
         System.out.println();
