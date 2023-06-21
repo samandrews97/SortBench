@@ -9,14 +9,14 @@ public class BubbleSort {
 
         String temp;
 
-        // Starting point for calculating time.
-        Date past = new Date();
-
         System.out.println("I am sorting, this may take some time.");
 
+        // Starting point for calculating time.
+        Date past = new Date();
+            
         for (int i = 0; i < words.length; i++) {
-
-            for (int j = 0; j < words.length; j++) {
+            
+            for (int j = i + 1; j < words.length; j++) {
 
                 if (words[j].compareTo(words[i]) < 0) {
 
@@ -33,7 +33,6 @@ public class BubbleSort {
 
         }
 
-        // End point for calculating time
         Date future = new Date();
 
         System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");

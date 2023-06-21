@@ -86,7 +86,7 @@ public class UserInterface {
                             switch(userSelectionSub) {
 
                                 case 1:
-                                    System.out.println("Heap Sort here");
+                                    HeapSort.heapSort(TxtFileToArray.populateArray());
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
