@@ -102,7 +102,7 @@ public class HeapSort {
         System.out.println("Worst-case: O(n log n) time complexity");
         System.out.println("Average: O(n log n) time complexity");
         System.out.println("Best-case: O(n log n) time complexity");
-        System.out.println("Memory: The wrost-case space complexity is O(n) total and O(1) auxiliary");
+        System.out.println("Memory: The worst-case space complexity is O(n) total and O(1) auxiliary.");
         System.out.println();
         System.out.println("While faster than other algorithms such as bubblesort, heapsort competes mainly with quicksort."
                           + " While it has multiple benefits such as, simple non-recursive code, low memory requirements and doesn't " 
@@ -116,7 +116,7 @@ public class HeapSort {
         System.out.println("Robert W. Floyd imporpved upon the original algorithm and his implementation allowed for in-place sorting");
         System.out.println("There are many variations of the heapsort algorithm. Some of these are:");
         System.out.println("Floyd's heap construction, Bottom-up heapsort, Ternary heapsort, Memory optimised heapsort, "
-                          + "Out-of-place heapsort, Smoothsort, Weak heapsort and Katajainen's ultimate heapsort");
+                          + "Out-of-place heapsort, Smoothsort, Weak heapsort and Katajainen's ultimate heapsort.");
         System.out.println();
         System.out.println("Heapsort is popular in embedded systems, real-time computing and the Linux kernel");
         System.out.println();
