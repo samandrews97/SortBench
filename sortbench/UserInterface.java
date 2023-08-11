@@ -126,13 +126,13 @@ public class UserInterface {
                             switch(userSelectionSub) {
 
                                 case 1:
-                                    System.out.println("You have selected the Insertion Sort algorithm");
+                                    InsertionSort.insertionSort(TxtFileToArray.populateArray());
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Insertion Sort info here");
+                                    InsertionSort.insertionInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
