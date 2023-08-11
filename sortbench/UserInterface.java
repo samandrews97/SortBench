@@ -132,7 +132,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Insertion Sort info here");
+                                    InsertionSort.insertionInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
