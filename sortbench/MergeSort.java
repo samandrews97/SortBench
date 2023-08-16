@@ -117,5 +117,33 @@ public class MergeSort {
         }
 
     }
+
+    // Display info about the merge sort algorithm.
+    public static void mergeInfo() {
+
+        System.out.println();
+        System.out.println("About:");
+        System.out.println("The Merge sort algorithm is an efficient divide-and-conquer algorithm. It first starts by dividing an unsorted list in half "
+                           + "repatedly until it has n sublists, each with one element. It then compares pairs of elements, sorts them, and merges them. It then repeats "
+                           + "comparing merged sublits and sorts them repeatedly until it is left with a complete sorted list.");
+        System.out.println();
+        System.out.println("Performance:");
+        System.out.println("Worst-case: O(nlogn) time complexity.");
+        System.out.println("Average: O(nlogn) time complexity.");
+        System.out.println("Best-case: O(nlogn) time complexity.");
+        System.out.println("Memory: The worst-case space complexity is O(n) total with O(n) auxiliary, or O(1) auxiliary when using linked lists");
+        System.out.println();
+        System.out.println("Merge sort is efficient for large data sets and can be designed to be very parallel.");
+        System.out.println();
+        System.out.println("Trivia:");
+        System.out.println("Merge sort is a divide-and-conquer algorithm invented by John von Neumann in 1945. In a report by Goldstine and von Neumann in 1948 a detailed description and an analysis of a bottom-up merge sort appeared.");
+        System.out.println();
+        System.out.println("Merge sort type algorithms were used in early computers to sort large data sets residing on disk or tape storage, where the data set was too large to fit into the smaller amount of memory that early computers had.");
+        System.out.println();
+        System.out.println("Some variatons of the Merge sort are:");
+        System.out.println("Natural merge sort, Ping-pong merge sort, External merge sort, Tiled merge sort, as well as a lot of Parallel merge sorts");
+        System.out.println();
+        
+    }
     
 }

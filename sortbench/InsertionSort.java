@@ -60,8 +60,8 @@ public class InsertionSort {
                            + " This process is repeated until the list is sorted as desired.");
         System.out.println();
         System.out.println("Performance:");
-        System.out.println("Worst-case: 0(n\u00b2) time complexity. This is comprised of 0(n\u00b2) comparisons and 0(n\u00b2) swaps.");
-        System.out.println("Average: 0(n\u00b2) time complexity. This is comprised of 0(n\u00b2) comparisons and 0(n\u00b2) swaps.");
+        System.out.println("Worst-case: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(n\u00b2) swaps.");
+        System.out.println("Average: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(n\u00b2) swaps.");
         System.out.println("Best-case: O(n) time complexity. This is comprised of O(n) comparisons and O(1) swaps.");
         System.out.println("Memory: The worst-case space complexity is O(n) total and O(1) auxilliary.");
         System.out.println();

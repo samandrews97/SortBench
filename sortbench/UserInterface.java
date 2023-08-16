@@ -173,7 +173,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Merge Sort info here");
+                                    MergeSort.mergeInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
