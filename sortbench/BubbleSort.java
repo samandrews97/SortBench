@@ -7,7 +7,7 @@ public class BubbleSort {
     // Convert the text file to an array
     public static final String[] words = TxtFileToArray.populateArray();
 
-    // Perform a bubblesort on the array
+    // Perform a bubble sort on the array.
     public static void bubbleSort(String[] a) {
 
         String temp;

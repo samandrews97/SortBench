@@ -7,6 +7,7 @@ public class InsertionSort {
 
     public static final String[] words = TxtFileToArray.populateArray();
 
+    // Perform an insertion sort on the array.
     public static void insertionSort(String[] a) {
 
         String temp;
@@ -16,7 +17,6 @@ public class InsertionSort {
         // Starting point for calculating time
         Date past = new Date();
 
-        // Perform the insertion sort.
         for (int i = 1; i < words.length; i++) {
 
             if (i == 0) {
