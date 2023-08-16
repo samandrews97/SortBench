@@ -8,12 +8,13 @@ import java.util.List;
 
 public class TxtFileToArray {
 
+    // Convert the words in a textfile to an array to be used by sorting algorithms.
     public static String[] populateArray() {
 
         // ArrayList of the words in words.txt
         List<String> listOfWords = new ArrayList<>();
 
-        // A BufferedReader to load the data from the file
+        // A BufferedReader to load the data from the file.
         try {
 
             BufferedReader BufferedReader = new BufferedReader(new FileReader("/Users/sam/Desktop/SortBench/sortbench/mit10000.txt"));

@@ -16,6 +16,7 @@ public class InsertionSort {
         // Starting point for calculating time
         Date past = new Date();
 
+        // Perform the insertion sort.
         for (int i = 1; i < words.length; i++) {
 
             if (i == 0) {
@@ -43,10 +44,12 @@ public class InsertionSort {
         // Test to check that the array is sorted correctly.
         //System.out.println(Arrays.toString(words));
 
+        // Print the time taken for the alogirthm to complete the sort.
         System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
 
     }
 
+    // Display info about the insertion sort algorithm.
     public static void insertionInfo() {
 
         System.out.println();

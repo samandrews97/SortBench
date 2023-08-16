@@ -55,7 +55,7 @@ public class HeapSort {
     // Convert the array into a max heap to be sorted.
     static void heapify(String[] a, int arrayLength, int i) {
 
-        // The largest value is initialised as the root of the tree
+        // The largest value is initialised as the root of the tree.
         int largestValue = i;
 
         int leftChild = 2 * i + 1;
@@ -88,6 +88,7 @@ public class HeapSort {
 
     }
 
+    // Display information about the heap sort algorithm.
     public static void heapInfo() {
 
         System.out.println();

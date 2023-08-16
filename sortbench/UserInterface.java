@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    // Main menu for selecting which sorting algorithm to run
+    // Main menu for selecting which sorting algorithm to run.
     public static void mainMenu() {
             
             int userSelectionMain;
@@ -28,6 +28,7 @@ public class UserInterface {
             int userSelectionSub;
             Scanner userInputSub = new Scanner(System.in);
 
+            // switch-case method for responding to user selection.
             do {
 
                 repeat = false;
@@ -59,7 +60,7 @@ public class UserInterface {
                                         break;
                                     case 3:
                                         mainMenu();
-                                        userInputSub.close();   // close the scanner to prevent a memory leak
+                                        userInputSub.close();   // close the scanner to prevent a memory leak.
                                         break;
                                     default:
                                         System.out.println("Invalid Option: Please select an option between 1 & 3");
@@ -71,7 +72,7 @@ public class UserInterface {
                             
                             } while (subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
                 
                     case 2:
@@ -99,7 +100,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 3");
@@ -111,7 +112,7 @@ public class UserInterface {
 
                         } while (subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
                 
                     case 3:
@@ -139,7 +140,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -151,7 +152,7 @@ public class UserInterface {
 
                         } while (subRepeat);
 
-                        userInputSub.close();   // close scanner to prevent a memory leak
+                        userInputSub.close();   // close scanner to prevent a memory leak.
                         break;
 
                     case 4: 
@@ -179,7 +180,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -191,7 +192,7 @@ public class UserInterface {
 
                         } while (subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
 
                     case 5:
@@ -219,7 +220,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -231,7 +232,7 @@ public class UserInterface {
 
                         } while (subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
 
                     case 6:
@@ -259,7 +260,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -271,7 +272,7 @@ public class UserInterface {
 
                         } while (subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
 
                     case 7:
@@ -300,7 +301,7 @@ public class UserInterface {
                                     break;
                                 case 3:
                                     mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    userInputSub.close();   // close the scanner to prevent a memory leak.
                                     break;
                                 default:
                                     System.out.println("Invalid Option: Please select an option between 1 & 2");
@@ -312,7 +313,7 @@ public class UserInterface {
 
                         } while(subRepeat);
 
-                        userInputSub.close();   // close the scanner to prevent a memory leak
+                        userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
                 
                     case 8:
@@ -329,11 +330,11 @@ public class UserInterface {
                 
             } while (repeat);
 
-        userInputMain.close();  // close the scanner to prevent a memory leak
+        userInputMain.close();  // close the scanner to prevent a memory leak.
         
     }
 
-    // Sub menu for selecting an option after selecting a sorting algorithm
+    // Sub menu for selecting an option after selecting a sorting algorithm.
     public static void subMenu() {
 
         System.out.println("Please select one of the following options:");

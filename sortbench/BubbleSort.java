@@ -4,7 +4,10 @@ import java.util.Date;
 
 public class BubbleSort {
 
+    // Convert the text file to an array
     public static final String[] words = TxtFileToArray.populateArray();
+
+    // Perform a bubblesort on the array
     public static void bubbleSort(String[] a) {
 
         String temp;
@@ -39,6 +42,7 @@ public class BubbleSort {
         
     }
 
+    // Display info about the bubble sort to terminal output.
     public static void bubbleInfo() {
 
         System.out.println();
