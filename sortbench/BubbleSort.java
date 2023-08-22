@@ -1,44 +1,52 @@
 package sortbench;
 
+import java.util.Arrays;
 import java.util.Date;
 
-public class BubbleSort {
+import com.apple.laf.resources.aqua;
 
-    // Convert the text file to an array
-    public static final String[] words = TxtFileToArray.populateArray();
+public class BubbleSort {  
 
-    // Perform a bubble sort on the array.
     public static void bubbleSort(String[] a) {
-
-        String temp;
 
         System.out.println("I am sorting, this may take some time.");
 
-        // Starting point for calculating time.
+        // Starting point for calculating time
         Date past = new Date();
-            
-        for (int i = 0; i < words.length; i++) {
-            
-            for (int j = i + 1; j < words.length; j++) {
 
-                if (words[j].compareTo(words[i]) < 0) {
+        bubSort(a);
 
-                    temp = words[i];
-                    words[i] = words[j];
-                    words[j] = temp;
+        Date future = new Date();
+
+        System.out.println(Arrays.toString(a));
+
+        System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
+
+    }
+
+    // Perform a bubble sort on the array.
+    public static void bubSort(String[] a) {
+
+        boolean swappedItems = true;
+
+        while (swappedItems) {
+
+            swappedItems = false;
+
+            for (int i = 0; i < a.length - 1; i++) {
+
+                if (a[i].compareTo(a[i + 1]) > 0) {
+
+                    swappedItems = true;
+                    String temp = a[i];
+                    a[i] = a[i + 1];
+                    a[i + 1] = temp;
 
                 }
 
             }
 
-            // Test to see if the array is sorted.
-            // System.out.println(words[i]);
-
         }
-
-        Date future = new Date();
-
-        System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
         
     }
 
