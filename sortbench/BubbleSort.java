@@ -3,23 +3,25 @@ package sortbench;
 import java.util.Arrays;
 import java.util.Date;
 
-import com.apple.laf.resources.aqua;
-
 public class BubbleSort {  
 
     public static void bubbleSort(String[] a) {
 
         System.out.println("I am sorting, this may take some time.");
 
-        // Starting point for calculating time
+        // Starting point for calculating time.
         Date past = new Date();
 
+        // Perform sort on input array.
         bubSort(a);
 
+        // End point for calculating time.
         Date future = new Date();
 
-        System.out.println(Arrays.toString(a));
+        // Test to check that the array is sorted correctly.
+        //System.out.println(Arrays.toString(a));
 
+        // Print the time taken for the algorithm to complete the sort.
         System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
 
     }
@@ -27,6 +29,7 @@ public class BubbleSort {
     // Perform a bubble sort on the array.
     public static void bubSort(String[] a) {
 
+        // Flag for if the list still requires sorts.
         boolean swappedItems = true;
 
         while (swappedItems) {
@@ -35,8 +38,10 @@ public class BubbleSort {
 
             for (int i = 0; i < a.length - 1; i++) {
 
+                // If element at current index comes after the one at the next index we need to swap them.
                 if (a[i].compareTo(a[i + 1]) > 0) {
 
+                    // Set flag to true that two items need swapped.
                     swappedItems = true;
                     String temp = a[i];
                     a[i] = a[i + 1];

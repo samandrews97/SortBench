@@ -17,8 +17,8 @@ public class UserInterface {
             System.out.println("3) Insertion Sort");
             System.out.println("4) Merge Sort");
             System.out.println("5) Quick Sort");
-            System.out.println("6) Radix Sort");
-            System.out.println("7) Selection Sort");
+            System.out.println("6) Selection Sort");
+            System.out.println("7) Bogo Sort");
             System.out.println("8) Exit");
 
             userSelectionMain = isNumber(userInputMain);
@@ -236,46 +236,6 @@ public class UserInterface {
                         break;
 
                     case 6:
-                        System.out.println("You have selected the Radix Sort algorithm");
-                        subMenu();
-                        userSelectionSub = isNumber(userInputSub);
-
-                        do {
-
-                            subRepeat = false;
-
-                            switch(userSelectionSub) {
-
-                                case 1:
-                                    System.out.println("You have selected the single threaded benchmark");
-                                    subMenu();
-                                    userSelectionSub = isNumber(userInputSub);
-                                    subRepeat = true;
-                                    break;
-                                case 2:
-                                    System.out.println("Radix Sort info here");
-                                    subMenu();
-                                    userSelectionSub = isNumber(userInputSub);
-                                    subRepeat = true;
-                                    break;
-                                case 3:
-                                    mainMenu();
-                                    userInputSub.close();   // close the scanner to prevent a memory leak.
-                                    break;
-                                default:
-                                    System.out.println("Invalid Option: Please select an option between 1 & 2");
-                                    subRepeat = true;
-                                    userSelectionSub = isNumber(userInputSub);
-                                    break;
-
-                            }
-
-                        } while (subRepeat);
-
-                        userInputSub.close();   // close the scanner to prevent a memory leak.
-                        break;
-
-                    case 7:
 
                         System.out.println("You have selected the Selection Sort algorithm");
                         subMenu();
@@ -315,6 +275,40 @@ public class UserInterface {
 
                         userInputSub.close();   // close the scanner to prevent a memory leak.
                         break;
+
+                    case 7:
+
+                        System.out.println("You have selected the Bogo Sort algorithm");
+                        System.out.println("WARNING: This sort works by randomising a list until it is sorted. Theoretically it could never sort the list. THIS WAS ADDED FOR \"FUN\" ONLY.");
+                        subMenu();
+                        userSelectionSub = isNumber(userInputSub);
+
+                        do {
+
+                            subRepeat = false;
+
+                            switch(userSelectionSub) {
+
+                                case 1:
+                                    BogoSort.bogoSort(TxtFileToArray.populateArray());
+                                    subMenu();
+                                    userSelectionSub = isNumber(userInputSub);
+                                    subRepeat = true;
+                                    break;
+                                case 2:
+                                    System.out.println("Bogo sort info here");
+                                    subMenu();
+                                    userSelectionSub = isNumber(userInputSub);
+                                    subRepeat = true;
+                                    break;
+                                case 3:
+                                    mainMenu();
+                                    userInputSub.close();   // close the scanner to prevent a memory leak
+                                    break;
+
+                            }
+
+                        } while(subRepeat);
                 
                     case 8:
                         System.out.println("Exiting program");

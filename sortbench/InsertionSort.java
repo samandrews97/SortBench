@@ -5,48 +5,52 @@ import java.util.Date;
 
 public class InsertionSort {
 
-    public static final String[] words = TxtFileToArray.populateArray();
-
-    // Perform an insertion sort on the array.
     public static void insertionSort(String[] a) {
-
-        String temp;
 
         System.out.println("I am sorting, this may take some time");
 
-        // Starting point for calculating time
+        // Starting point for calculating time.
         Date past = new Date();
 
-        for (int i = 1; i < words.length; i++) {
-
-            if (i == 0) {
-
-                continue;
-
-            } else if (words[i].compareTo(words[i - 1]) > 0) {
-
-                continue;
-
-            } else if (words[i].compareTo(words[i - 1]) < 0) {
-
-                temp = words[i - 1];
-                words[i - 1] = words[i];
-                words[i] = temp;
-
-                i -= 2;
-
-            }
-
-        }
+        // Perform the sort on input array.
+        insSort(a);
 
         // End point for calculating time.
         Date future = new Date();
 
         // Test to check that the array is sorted correctly.
-        //System.out.println(Arrays.toString(words));
+        //System.out.println(Arrays.toString(a));
 
         // Print the time taken for the alogirthm to complete the sort.
         System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
+    }
+
+    // Perform an insertion sort on the array.
+    public static void insSort(String[] a) {
+
+        for (int i = 1; i < a.length; i++) {
+
+            // If ever at index 0 continue to for loop to increment.
+            if (i == 0) {
+
+                continue;
+            
+            } else if (a[i].compareTo(a[i - 1]) > 0) {  // If our String comes after the one in the previous index continue to for loop to increment.
+
+                continue;
+
+            } else if (a[i].compareTo(a[i - 1]) < 0) { // If our String comes before the one in the previous index swap them.
+
+                String temp = a[i - 1];
+                a[i - 1] = a[i];
+                a[i] = temp;
+
+                // Decrement by -2 so after the increment we are at a[i - 1] which is where we just put our smaller swapped element.
+                i -= 2;
+
+            }
+
+        }
 
     }
 

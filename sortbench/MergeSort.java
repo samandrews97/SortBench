@@ -5,20 +5,21 @@ import java.util.Date;
 
 public class MergeSort {
 
-    public static final String[] words = TxtFileToArray.populateArray();
-
-    public static void mergeSort(String[] words) {
+    public static void mergeSort(String[] a) {
 
         System.out.println("I am sorting, this may take some time");
 
-        // Start point for calculating time
+        // Start point for calculating time.
         Date past = new Date();
 
-        // Perform the sort
-        sort(words);
+        // Perform the sort.
+        merSort(a);
 
-        // End point for calculating time
+        // End point for calculating time.
         Date future = new Date();
+
+        // Test to check that the array is sorted correctly.
+        //System.out.println(Arrays.toString(a));
 
         // Print the time taken for the algorithm to complete the sort.
         System.out.println("Time to sort: " + (future.getTime() - past.getTime()) + " milliseconds");
@@ -26,50 +27,50 @@ public class MergeSort {
     }
 
     
+    // Perform a merge sort on the array.
+    public static void merSort(String[] a) {
 
-    public static void sort(String[] words) {
-
-        int wordsLength = words.length;
+        int aLength = a.length;
 
         // If length of subarray is less than 2, continue as it is sorted.
-        if (wordsLength < 2) {
+        if (aLength < 2) {
 
             return;
 
         }
 
         // Find array mid point and split into two sub-arrays.
-        int midPoint = wordsLength / 2;
+        int midPoint = aLength / 2;
         String[] leftSubArray = new String[midPoint];
-        String[] rightSubArray = new String[wordsLength - midPoint];
+        String[] rightSubArray = new String[aLength - midPoint];
 
         // Populate the left sub-array.
         for (int i = 0; i < midPoint; i++) {
 
-            leftSubArray[i] = words[i];
+            leftSubArray[i] = a[i];
 
         }
 
         // Populate the right sub-array.
-        for (int j = midPoint; j < wordsLength; j++) {
+        for (int j = midPoint; j < aLength; j++) {
 
-            rightSubArray[j - midPoint] = words[j];
+            rightSubArray[j - midPoint] = a[j];
 
         }
 
         // Recursively perform mergeSort on sub-arrays.
-        sort(leftSubArray);
-        sort(rightSubArray);
+        merSort(leftSubArray);
+        merSort(rightSubArray);
 
         // Use merge to combine to sorted array
-        merge(words, leftSubArray, rightSubArray);
+        merge(a, leftSubArray, rightSubArray);
 
     }
 
     
 
     // Merge sorted sub-arrays.
-    private static void merge(String[] words, String[] leftArray, String[] rightArray) {
+    private static void merge(String[] a, String[] leftArray, String[] rightArray) {
 
         int leftArraySize = leftArray.length;
         int rightArraySize = rightArray.length;
@@ -81,13 +82,13 @@ public class MergeSort {
 
             if (leftArray[i].compareTo(rightArray[j]) < 0) {
 
-                words[k] = leftArray[i];
+                a[k] = leftArray[i];
 
                 i++;
 
             } else {
 
-                words[k] = rightArray[j];
+                a[k] = rightArray[j];
 
                 j++;
 
@@ -100,7 +101,7 @@ public class MergeSort {
         // Add any elements remaining in left or right array.
         while (i < leftArraySize) {
 
-            words[k] = leftArray[i];
+            a[k] = leftArray[i];
 
             i++;
             k++;
@@ -109,7 +110,7 @@ public class MergeSort {
 
         while (j < rightArraySize) {
 
-            words[k] = rightArray[j];
+            a[k] = rightArray[j];
 
             j++;
             k++;
