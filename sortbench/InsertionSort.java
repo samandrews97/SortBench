@@ -39,6 +39,7 @@ public class InsertionSort {
 
         }
 
+        // End point for calculating time.
         Date future = new Date();
 
         // Test to check that the array is sorted correctly.

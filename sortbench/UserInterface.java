@@ -207,7 +207,7 @@ public class UserInterface {
                             switch(userSelectionSub) {
 
                                 case 1:
-                                    System.out.println("You have selected the Quick Sort algorithm");
+                                    QuickSort.quickSort(TxtFileToArray.populateArray());
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
@@ -288,7 +288,7 @@ public class UserInterface {
                             switch (userSelectionSub) {
 
                                 case 1:
-                                    System.out.println("You have selected the Selection Sort algorithm");
+                                    SelectionSort.selectionSort(TxtFileToArray.populateArray());
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
