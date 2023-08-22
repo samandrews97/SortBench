@@ -77,7 +77,7 @@ public class BubbleSort {
         System.out.println("The earliest description of the algorithm was by Edward Harry Friend in 1956.");
         System.out.println();
         System.out.println("In 2007 Google CEO Eric Schmidt asked to-be predisdent Barack Obama what the best way to sort one million integers is," 
-                            + " Obama replied 'I think the bubble sort would be the wrong way to go'");
+                            + " Obama replied 'I think the bubble sort would be the wrong way to go.'");
         System.out.println();
 
     }

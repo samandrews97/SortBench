@@ -73,4 +73,30 @@ public class BogoSort {
 
     }
 
+    // Display info about the bogo sort algorithm.
+    public static void bogoInfo() {
+
+        System.out.println();
+        System.out.println("About:");
+        System.out.println("The Bogo sort algorithm is a sorting algorithm that is not useful for sorting outside of using it for educational purposes. It takes an unsorted list "
+                          + "generates different permutations until it generates one that is sorted. It can be implemented to use either random permutations or deterministic permutations.");
+        System.out.println();
+        System.out.println("Performance:");
+        System.out.println("Worst-case performance: Unbounded time complexity for randomised version. O(n x n!) time complexity for deterministic version.");
+        System.out.println("Average: O(n x n!) time complexity.");
+        System.out.println("Best-case: O(n) time complexity.");
+        System.out.println("Memory: The worst-case space complexity is O(1).");
+        System.out.println();
+        System.out.println("Bogo sort's efficiency is why it is not used for sorting outside demonstrations. For any size list it could get a sorted permutation on it's first or first few generations."
+                          + " or it could never sort it. Although this is unlikely for very small lists.");
+        System.out.println();
+        System.out.println("Trivia:");
+        System.out.println("The name bogo sort is a blend of the words bogus and sort.");
+        System.out.println();
+        System.out.println("Related algorithms to bogo sort are:");
+        System.out.println("Gorosort, Bogobogosort, Bozosort, Worstsort, Slowsort, Quantum bogosort and Miracle sort.");
+        System.out.println();
+        
+    }
+
 }

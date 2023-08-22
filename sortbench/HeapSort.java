@@ -117,13 +117,13 @@ public class HeapSort {
         System.out.println("Trivia:");
         System.out.println("The heapsort algorithm was invented by J. W. J. Williams in 1964. It was also the birth of the heap data structure.");
         System.out.println();
-        System.out.println("Robert W. Floyd imporpved upon the original algorithm and his implementation allowed for in-place sorting");
+        System.out.println("Robert W. Floyd imporpved upon the original algorithm and his implementation allowed for in-place sorting.");
         System.out.println();
         System.out.println("There are many variations of the heapsort algorithm. Some of these are:");
         System.out.println("Floyd's heap construction, Bottom-up heapsort, Ternary heapsort, Memory optimised heapsort, "
                           + "Out-of-place heapsort, Smoothsort, Weak heapsort and Katajainen's ultimate heapsort.");
         System.out.println();
-        System.out.println("Heapsort is popular in embedded systems, real-time computing and the Linux kernel");
+        System.out.println("Heapsort is popular in embedded systems, real-time computing and the Linux kernel.");
         System.out.println();
 
 

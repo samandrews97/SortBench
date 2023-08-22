@@ -1,10 +1,11 @@
 package sortbench;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.InputStream;
 
 public class TxtFileToArray {
 
@@ -14,10 +15,12 @@ public class TxtFileToArray {
         // ArrayList of the words in words.txt
         List<String> listOfWords = new ArrayList<>();
 
+        InputStream inputFile = TxtFileToArray.class.getResourceAsStream("mit10000.txt");
+
         // A BufferedReader to load the data from the file.
         try {
 
-            BufferedReader BufferedReader = new BufferedReader(new FileReader("/Users/sam/Desktop/SortBench/sortbench/mit10000.txt"));
+            BufferedReader BufferedReader = new BufferedReader(new InputStreamReader(inputFile));
 
             String line = BufferedReader.readLine();
 

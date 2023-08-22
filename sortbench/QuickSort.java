@@ -93,4 +93,32 @@ public class QuickSort {
         a[index2] = temp;
 
     }
+
+    // Display info about the quick sort algorithm.
+    public static void quickInfo() {
+
+        System.out.println();
+        System.out.println("About:");
+        System.out.println("The Quick sort algorithm is an efficient divide-and-conquer algorithm. It uses an element in a list as a pivot point and then creates "
+                           + "two partitions. The partition to the left of the pivot point is populated with items that need to come before the pivot point value and the one "
+                           + "to the right the items that need to come after. This is called recursively the list is sorted.");
+        System.out.println();
+        System.out.println("Performance:");
+        System.out.println("Worst-case: O(n\u00b2) time complexity.");
+        System.out.println("Average: O(nlogn) time complexity.");
+        System.out.println("Best-case: O(nlogn) for simple partition and O(n) for three-way partion and equal keys");
+        System.out.println("Memory: The worst-case space complexity is O(n) auxiliary for a naive implemementation or O(nlogn) auxiliary otherwise.");
+        System.out.println();
+        System.out.println("Quick sort is a very efficient algorithm, both in terms of time and memory usage. It competes with Heap Sort and Merge Sort.");
+        System.out.println();
+        System.out.println("Trivia:");
+        System.out.println("The algorithm was created in 1959 by Tony Hoare and its details published in 1961.");
+        System.out.println();
+        System.out.println("It is still in use today with many programs using it as their default sort method, or as a hybrid method in combination with another sort (e.g. merge sort).");
+        System.out.println();
+        System.out.println("Soem variations of the Quick sort algorithm are:");
+        System.out.println("Multi-pivot quicksort, External quicksort, Three-way radix quicksort, Quick radix sort, BlockQuicksort, Partial and Incremental quicksort.");
+        System.out.println();
+        
+    }
 }

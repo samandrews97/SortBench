@@ -213,7 +213,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Quick Sort info here");
+                                    QuickSort.quickInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
@@ -254,7 +254,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Selection Sort info here");
+                                    SelectionSort.selectionInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;
@@ -296,7 +296,7 @@ public class UserInterface {
                                     subRepeat = true;
                                     break;
                                 case 2:
-                                    System.out.println("Bogo sort info here");
+                                    BogoSort.bogoInfo();
                                     subMenu();
                                     userSelectionSub = isNumber(userInputSub);
                                     subRepeat = true;

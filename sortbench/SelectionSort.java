@@ -67,5 +67,32 @@ public class SelectionSort {
         a[y] = temp;
     
     }
+
+    // Display info about the selection sort algorithm.
+    public static void selectionInfo() {
+
+        System.out.println();
+        System.out.println("About:");
+        System.out.println("The Selection sort is an in-place comparison algorithm. Say the list to be sorted contains numbers and it has to be sorted smallest to largest."
+                          + " Selecrtion sort will set the first index as the minimum value, it will then compare this value to every other one in the list. If the first index is"
+                          + " the minimum it moves on to the next index. If not it swaps it with the index that is the minimum. Once an index is sorted it is never compared again."
+                          + " This is repeated until the list is sorted.");
+        System.out.println();
+        System.out.println("Performance:");
+        System.out.println("Worst-case: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(n) swaps.");
+        System.out.println("Average-case: O(n\u00b2) time complexity. This consists of O(n\u00b2) comparisons and O(n) swaps.");
+        System.out.println("Best-case: O(n\u00b2) time complexity. This is comprised of O(n\u00b2) comparisons and O(1) swaps.");
+        System.out.println("Memory: The worst-case space complexity is O(1) auxiliary.");
+        System.out.println();
+        System.out.println("Selection sort is not an efficient sorting algorithm. This in-efficiency builds as the size of the list to sort does.");
+        System.out.println();
+        System.out.println("Trivia:");
+        System.out.println("Is an almost-always-faster sorting algorithm than Bubble sort and Gnome sort.");
+        System.out.println();
+        System.out.println("Some variations of the Inserstion sort are:");
+        System.out.println("Heapsort, Double selection sort/Cocktail sort, Stable sort and Bingo sort.");
+        System.out.println();
+        
+    }
     
 }

@@ -142,7 +142,7 @@ public class MergeSort {
         System.out.println("Merge sort type algorithms were used in early computers to sort large data sets residing on disk or tape storage, where the data set was too large to fit into the smaller amount of memory that early computers had.");
         System.out.println();
         System.out.println("Some variatons of the Merge sort are:");
-        System.out.println("Natural merge sort, Ping-pong merge sort, External merge sort, Tiled merge sort, as well as a lot of Parallel merge sorts");
+        System.out.println("Natural merge sort, Ping-pong merge sort, External merge sort, Tiled merge sort, as well as a lot of Parallel merge sorts.");
         System.out.println();
         
     }
